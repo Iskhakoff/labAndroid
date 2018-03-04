@@ -13,32 +13,41 @@
         android:id="@+id/questionTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text=""
+        android:textSize="25sp"
+        android:textColor="#000"/>
 
     <RadioGroup
         android:id="@+id/answers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
 
         <RadioButton
             android:id="@+id/ansTv1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
         <RadioButton
             android:id="@+id/ansTv2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
         <RadioButton
             android:id="@+id/ansTv3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
     </RadioGroup>
 
     <Button
         android:id="@+id/btnReply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ответить"/>
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:text="Ответить"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>

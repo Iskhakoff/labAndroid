@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="Вход"
+        android:textSize="25sp"
+        android:textColor="#000000"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"/>
 
@@ -26,6 +28,8 @@
 
     <Button
         android:id="@+id/btnEnter"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
         android:layout_height="wrap_content"
         android:layout_width="150dp"
         android:layout_marginTop="40dp"
