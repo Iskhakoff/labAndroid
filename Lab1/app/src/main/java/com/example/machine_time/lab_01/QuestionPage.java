@@ -25,7 +25,7 @@ public class QuestionPage extends AppCompatActivity implements View.OnClickListe
     String[] answer1 = {"1", "Junior", "Христофор Колумб", "10 млрд", "5"};
     String[] answer2 = {"5", "Middle/Regular", "Алексей Навальный", "7 млрд", "20"};
     String[] answer3 = {"3", "Senior", "Барак Обама", "14 млрд", "10"};
-    String[] correctAnswer = {"3", "Junior", "Колумб", "7 млрд", "10"};
+    String[] correctAnswer = {"3", "Junior", "Христофор Колумб", "7 млрд", "10"};
 
     TextView questionTv;
     RadioButton ansTv1, ansTv2, ansTv3;
