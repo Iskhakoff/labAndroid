@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.machine_time.lab02.RegistrationPage"
+    android:padding="50dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя" />
+
+    <EditText
+        android:id="@+id/surnameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фамилия" />
+
+    <EditText
+        android:id="@+id/lastnameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Отчество" />
+
+    <EditText
+        android:id="@+id/loginEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Логин" />
+
+    <EditText
+        android:id="@+id/pwEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль" />
+
+    <EditText
+        android:id="@+id/trypwEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Повторите пароль" />
+
+    <Button
+        android:id="@+id/registrationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Регистрация" />
+
+    <TextView
+        android:id="@+id/errorPwLogTv"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0505"/>
+
+</LinearLayout>

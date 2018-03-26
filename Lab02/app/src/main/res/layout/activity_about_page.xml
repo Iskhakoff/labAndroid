@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.machine_time.lab02.AboutPage"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        />
+
+    <TextView
+        android:id="@+id/aboutAppTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in tellus lectus. Aliquam ac venenatis libero. Praesent vel commodo turpis, quis fermentum dui. Fusce ut dolor et ligula pharetra imperdiet eget et nunc. Ut suscipit turpis metus, vel dapibus massa vulputate at. Mauris accumsan nisi in ipsum congue sollicitudin. Ut suscipit vel tellus iaculis mattis. Suspendisse ut tellus est. Curabitur id ante nec tortor consequat fringilla. Quisque blandit et lorem vitae tincidunt. Mauris sed lorem sapien."></TextView>
+
+    <TextView
+        android:id="@+id/nameDevelopTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Исхаков Дмитрий Витальевич 151-322"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+
+
+</LinearLayout>
