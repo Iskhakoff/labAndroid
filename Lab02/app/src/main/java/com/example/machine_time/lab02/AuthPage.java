@@ -1,6 +1,7 @@
 package com.example.machine_time.lab02;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,8 @@ public class AuthPage extends AppCompatActivity implements View.OnClickListener 
     RegistrationPage.DBHelper dbHelper;
     SQLiteDatabase db;
 
+    SharedPreferences saveLogAndPass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +36,8 @@ public class AuthPage extends AppCompatActivity implements View.OnClickListener 
         enterBtn.setOnClickListener(this);
 
         dbHelper = new RegistrationPage.DBHelper(this);
+
+
 
     }
 
@@ -61,6 +66,14 @@ public class AuthPage extends AppCompatActivity implements View.OnClickListener 
             }
 
             if(auth){
+                saveLogAndPass = getSharedPreferences("savedData", 0);
+                SharedPreferences.Editor editor = saveLogAndPass.edit();
+                editor.putString("login", loginEt.getText().toString());
+                editor.putString("password", pwEt.getText().toString());
+                editor.commit();
+
+
+
                 Intent beginTest = new Intent(this, MainPage.class);
                 beginTest.putExtra("login", login);
                 startActivity(beginTest);

@@ -2,6 +2,7 @@ package com.example.machine_time.lab02;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class ResultPage extends AppCompatActivity {
     RegistrationPage.DBHelper dbHelper;
     SQLiteDatabase db;
 
+    SharedPreferences cleanCash;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -44,6 +46,9 @@ public class ResultPage extends AppCompatActivity {
                 startActivity(aboutApp);
                 break;
             case R.id.exit:
+                cleanCash = getSharedPreferences("savedData", 0);
+                cleanCash.edit().remove("login").apply();
+                cleanCash.edit().remove("password").apply();
                 Intent exit = new Intent(this, MainActivity.class);
                 startActivity(exit);
                 break;

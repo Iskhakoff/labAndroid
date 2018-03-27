@@ -1,6 +1,7 @@
 package com.example.machine_time.lab02;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,6 +14,8 @@ public class MainPage extends AppCompatActivity implements View.OnClickListener 
 
     Button beginTestBtn, showRatingBtn;
     String loginUser;
+
+    SharedPreferences cleanCash;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,6 +38,9 @@ public class MainPage extends AppCompatActivity implements View.OnClickListener 
                 startActivity(aboutApp);
                 break;
             case R.id.exit:
+                cleanCash = getSharedPreferences("savedData", 0);
+                cleanCash.edit().remove("login").apply();
+                cleanCash.edit().remove("password").apply();
                 Intent exit = new Intent(this, MainActivity.class);
                 startActivity(exit);
                 break;
