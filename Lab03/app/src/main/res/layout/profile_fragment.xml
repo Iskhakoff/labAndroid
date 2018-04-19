@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fioTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#222"/>
+
+    <TextView
+        android:id="@+id/dateBirthTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дата рождения:"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#222"/>
+
+    <TextView
+        android:id="@+id/birthTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/titleLoginTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Логин:"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#222"/>
+
+    <TextView
+        android:id="@+id/loginTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выход"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>
