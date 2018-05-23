@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab03</string>
+    <string name="title_films">Фильмы</string>
+    <string name="title_serials">Сериалы</string>
+    <string name="title_profile">Профиль</string>
+    <string name="auth_page">Авторизация</string>
+    <string name="registration_page">Регистрация</string>
+</resources>
